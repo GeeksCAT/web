@@ -127,44 +127,17 @@ title: Associació Geeks.CAT
         </header>
       </article>
 
-      <article id="nem-per-feina" class="container box style1 right">
+{%- for projecte in collections.projectes | reverse -%}
+      <article id="{{ projecte.fileSlug }}" class="container box {{ projecte.data.classes }}">
         <div class="inner">
           <header>
-            <h2><a href="https://nemperfeina.cat" target="_blank">Nem per feina</a></h2>
-            <a href="https://nemperfeina.cat" class="image fit" target="_blank"><img src="images/projects/nem-per-feina.png" alt=""></a>
+            <h2><a href="{{ projecte.data.url }}" target="_blank">{{ projecte.data.title }}</a></h2>
+            <a href="{{ projecte.data.url }}" class="image fit" target="_blank"><img src="images/projects/{{ projecte.data.image }}" alt="{{ project.data.image_alt if project.data.image_alt else projecte.data.title }}"></a>
           </header>
-          <p>Portal d'ofertes laboral opensource totalment gratuït.</p>
-          <p>Notifica a <a href="https://t.me/GeeksCAT" target="_blank">Telegram via @GeeksCAT</a> i a <a href="https://twitter.com/nemperfeina_cat" target="_blank">Twitter via @nemperfeina_cat</a>.</p>
-          <p><a href="https://nemperfeina.cat" target="_blank">nemperfeina.cat</a></p>
+          {{- projecte.content | safe }}
         </div>
       </article>
-
-      <article id="hacktoberfest-2020" class="container box style3">
-        <div class="inner">
-          <header>
-            <h2><a href="https://hacktoberfest.geekscat.org" target="_blank">Hacktoberfest 2020</a></h2>
-            <a class="image fit" href="https://hacktoberfest.geekscat.org" target="_blank"><img src="images/projects/hacktoberfest2020.png" alt="Hacktoberfest Closure Session"></a>
-          </header>
-          <p>Festival de l'Opensource 2020 on vàrem convocar a especialistes de tots els sectors (devs, devops, isec, UI/UX, ...) per tirar endavant un projecte conjunt durant tot un mes.</p>
-          <p>Vàrem involucrar a més de 50 especialistes de 4 països diferents, generant ~150 PR.</p>
-          <p>Com a resultat vàrem posar en producció el <a href="#nem-per-feina">Nem per feina!</a></p>
-          <p>Octubre del 2020</p>
-          <p><a href="https://hacktoberfest.geekscat.org" target="_blank">hacktoberfest.geekscat.org</a></p>
-        </div>
-      </article>
-
-      <article id="python-girona" class="container box style1 left">
-        <div class="inner">
-          <header>
-            <h2><a href="https://pythongirona.cat" target="_blank">Python Girona</a></h2>
-            <a href="https://pythongirona.cat" target="_blank" class="image fit"><img src="images/projects/pygrn-collage.png" alt=""></a>
-          </header>
-          <p>Agrupació destinada als amants de Python de les comarques gironines.</p>
-          <p>Projecte iniciat al 2017</p>
-          <p><a href="https://www.meetup.com/PythonGirona" target="_blank">Meetup PythonGirona</a></p>
-          <p><a href="https://pythongirona.cat" target="_blank">pythongirona.cat</a></p>
-          </div>
-      </article>
+{%- endfor -%}
 
       <!-- <footer>
                 <a href="#first" class="button style2 scrolly"
