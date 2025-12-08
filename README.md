@@ -9,7 +9,7 @@ Les PR són benvingudes :)
 El repositori conté simplement els recursos web directament interpretats pels navegadors (html, css,
 imatges, etc.).
 
-La web es desplega directament quan hi un canvi a la branca "master" perquè el repositori està
+La web es desplega directament quan hi ha un canvi a la branca "master" perquè el repositori està
 configurat amb "Github pages classic".
 
 Per tant, actualitzar-la és qüestió de modificar els fitxers que hi ha a la branca "master", enviar
