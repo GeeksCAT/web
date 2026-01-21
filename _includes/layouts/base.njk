@@ -131,8 +131,16 @@ title: Associació Geeks.CAT
       <article id="{{ projecte.fileSlug }}" class="container box {{ projecte.data.classes }}">
         <div class="inner">
           <header>
-            <h2><a href="{{ projecte.data.url }}" target="_blank">{{ projecte.data.title }}</a></h2>
-            <a href="{{ projecte.data.url }}" class="image fit" target="_blank"><img src="images/projects/{{ projecte.data.image }}" alt="{{ project.data.image_alt if project.data.image_alt else projecte.data.title }}"></a>
+            <h2>
+            {%- if projecte.data.url -%}
+              <a href="{{ projecte.data.url }}" target="_blank">{{ projecte.data.title }}</a>
+            {%- else -%}
+              {{ projecte.data.title }}
+            {%- endif -%}
+            </h2>
+            {% if projecte.data.url -%}<a href="{{ projecte.data.url }}" class="image fit" target="_blank">{% endif %}
+            <img class="image fit" src="images/projects/{{ projecte.data.image }}" alt="{{ projecte.data.image_alt if projecte.data.image_alt else projecte.data.title }}">
+            {% if projecte.data.url -%}</a>{% endif %}
           </header>
           {{- projecte.content | safe }}
         </div>
