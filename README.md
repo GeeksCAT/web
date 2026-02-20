@@ -1,17 +1,46 @@
-# Web estàtica de l'Associació Geeks.CAT
+# Web de l'Associació Geeks.CAT
 
-Versió estàtica de l'Associació!
+Lloc web estàtic de l'Associació Geeks.CAT construït amb [Astro](https://astro.build).
 
-Les PR són benvingudes :)
+## Requisits
 
-## Com actualitzar-la
+- [Node.js](https://nodejs.org/) (versió 18.14.1 o superior)
+- [pnpm](https://pnpm.io/) (gestor de paquets)
 
-El repositori conté simplement els recursos web directament interpretats pels navegadors (html, css,
-imatges, etc.).
+## Instal·lació
 
-La web es desplega directament quan hi ha un canvi a la branca "master" perquè el repositori està
-configurat amb "Github pages classic".
+```bash
+pnpm install
+```
 
-Per tant, actualitzar-la és qüestió de modificar els fitxers que hi ha a la branca "master", enviar
-un PR perquè es revisi, i un cop aprovat i fusionat els canvis a "master", la web s'actualitzarà en
-qüestió de minuts automàticament.
+## Desenvolupament
+
+Per iniciar el servidor de desenvolupament:
+
+```bash
+pnpm dev
+```
+
+El lloc web estarà disponible a `http://localhost:4321`.
+
+## Build
+
+Per generar la versió de producció:
+
+```bash
+pnpm build
+```
+
+Els fitxers generats es trobaran al directori `dist`.
+
+## Desplegament
+
+El lloc web es desplega automàticament a GitHub Pages quan es fa push a la branca `main`. Vegeu `.github/workflows/deploy.yml` per veure la configuració del desplegament.
+
+## Llicència
+
+El contingut d'aquest lloc web (HTML, CSS, imatges i altres actius estàtics) està sota la llicència [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+El disseny original de la plantilla HTML és d'[HTML5 UP](https://html5up.net/) sota llicència [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+
+Els paquets de software utilitzats per construir el lloc (Astro, Vite, etc.) tenen les seves pròpies llicències (principalment MIT). Vegeu `LICENSE.txt` per a més detalls.
