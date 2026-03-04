@@ -12,5 +12,6 @@
   "description": "",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0"
-  }
+  },
+  "private": true
 }
