@@ -1,0 +1,24 @@
+---
+import MarketingLayout from '@/layouts/MarketingLayout.astro';
+import Hero from '@sections/marketing/Hero.astro';
+import CTA from '@sections/marketing/CTA.astro';
+import { siteConfig } from '@/config';
+---
+
+<MarketingLayout
+  title={`Uneix-te a Geeks.CAT - ${siteConfig.name}`}
+  description="Join the Geeks.CAT community"
+>
+  <Hero
+    title="Uneix-te a Geeks.CAT"
+    subtitle="Forma part de la comunitat tecnològica més gran de Catalunya. Tots els nivells i coneixements són benvinguts!"
+    primaryCTA={{ label: 'Contacta amb nosaltres', href: '/contact' }}
+    secondaryCTA={{ label: 'Veure esdeveniments', href: '/events' }}
+  />
+
+  <CTA
+    title="Tens preguntes?"
+    description="Si tens alguna pregunta sobre com unir-te a la comunitat, no dubtis en contactar-nos."
+    action={{ label: 'Contactar', href: '/contact' }}
+  />
+</MarketingLayout>

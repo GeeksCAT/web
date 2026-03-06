@@ -1,0 +1,17 @@
+---
+import MarketingLayout from '@/layouts/MarketingLayout.astro';
+import Hero from '@sections/marketing/Hero.astro';
+import { siteConfig } from '@/config';
+---
+
+<MarketingLayout
+  title={`Esdeveniments - ${siteConfig.name}`}
+  description="Upcoming events and meetups from Geeks.CAT"
+>
+  <Hero
+    title="Esdeveniments"
+    subtitle="Uneix-te als nostres esdeveniments mensuals! Organitzem trobades, tallers i activitats per a la comunitat tecnològica de Catalunya."
+    primaryCTA={{ label: 'Uneix-te a la comunitat', href: '/join' }}
+    secondaryCTA={{ label: 'Contacta', href: '/contact' }}
+  />
+</MarketingLayout>

@@ -157,6 +157,7 @@ d. Nothing in this Public License constitutes or may be interpreted as a limitat
 The website content (HTML, CSS, images, and other static assets) is licensed under CC BY-SA 4.0 as stated above. However, this license does not cover the software dependencies used to build this site:
 
 - **Astro** (MIT License) - The static site generator framework used to build this website
+- **Virex** (MIT License) - The Astro theme used as a base for this website
 - **Vite** (MIT License) - The build tool used by Astro
 - **Other npm packages** - Various JavaScript libraries used in the build process
 

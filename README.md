@@ -1,6 +1,6 @@
 # Web de l'Associació Geeks.CAT
 
-Lloc web estàtic de l'Associació Geeks.CAT construït amb [Astro](https://astro.build).
+Lloc web estàtic de l'Associació Geeks.CAT construït amb [Astro](https://astro.build) i el tema [Virex](https://github.com/erlandv/virex).
 
 ## Requisits
 
@@ -40,6 +40,8 @@ El lloc web es desplega automàticament a GitHub Pages quan es fa push a la bran
 ## Llicència
 
 El contingut d'aquest lloc web (HTML, CSS, imatges i altres actius estàtics) està sota la llicència [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+El tema utilitzat és [Virex](https://github.com/erlandv/virex) (MIT License).
 
 El disseny original de la plantilla HTML és d'[HTML5 UP](https://html5up.net/) sota llicència [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 
