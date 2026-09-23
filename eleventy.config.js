@@ -5,6 +5,9 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy("images");
 
+	// Copy redirections
+	eleventyConfig.addPassthroughCopy("qr");
+
 	eleventyConfig.addPassthroughCopy("browserconfig.xml");
 	eleventyConfig.addPassthroughCopy("manifest.json");
 };
